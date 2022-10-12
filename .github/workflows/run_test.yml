@@ -40,6 +40,4 @@ jobs:
         coverage run -m unittest discover -p "*_test.py"
     - name: Upload coverage reports to Codecov
       run: |
-        curl -Os https://uploader.codecov.io/latest/macos/codecov
-        chmod +x codecov
-        ./codecov
+        bash <(curl -Os https://uploader.codecov.io/latest/macos/codecov chmod +x codecov ./codecov)
