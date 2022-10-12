@@ -37,12 +37,9 @@ def variance(data):
     # some deliberately misformatted code. Run flake8 and fix it.
     n = len(data)
     if n == 0:
-        raise ValueError("List must contain at least one value")
-    avg = average(data)
-    return sum([(x-avg)**2 for x in data])
-#        raise ValueError("Must have at least one value")
-#    average = sum(data)
-#    return sum( [(x-average)**2 for x in data] )
+        raise ValueError("Must have at least one value")
+    average = sum(data) / n
+    return sum( [(x-average)**2 for x in data] ) / n
 
 def stdev(data):
     """The population standard deviation of a list of data values."""
