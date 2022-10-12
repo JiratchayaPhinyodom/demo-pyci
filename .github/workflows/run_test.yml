@@ -38,6 +38,5 @@ jobs:
     - name: COV
       run: |
         coverage run -m unittest discover -p "*_test.py"
-    - name: Upload coverage reports to Codecov
-      run: |
-        bash <(curl -Os https://uploader.codecov.io/latest/macos/codecov chmod +x codecov ./codecov)
+    - name: Upload coverage reports to Codecov with GitHub Action
+      uses: codecov/codecov-action@v3
