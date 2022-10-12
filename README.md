@@ -1,6 +1,6 @@
 Continuous Integration Demo
 ============================
-![example workflow](https://github.com/JiratchayaPhinyodom/demo-pyci/blob/master/.github/workflows/run_test.yml/badge.svg)
+[![Django CI](https://github.com/JiratchayaPhinyodom/demo-pyci/actions/workflows/run_test.yml/badge.svg)](https://github.com/JiratchayaPhinyodom/demo-pyci/actions/workflows/run_test.yml)
 
 
 This project demonstrates use of Github Actions to build and test a Python project.  
