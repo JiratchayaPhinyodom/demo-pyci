@@ -41,3 +41,5 @@ jobs:
     - name: Upload coverage reports to Codecov
       run: |
         bash <(curl -Os https://uploader.codecov.io/latest/macos/codecov chmod +x codecov ./codecov)
+    - name: Codecov
+      uses: codecov/codecov-action@v3.1.1
